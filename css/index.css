@@ -46,6 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*CSS reset ends here*/
+
+/* CSS Styling starts here*/
 
 * {
     box-sizing: border-box;
@@ -66,9 +69,33 @@ p {
     line-height: 1.4;
 }
 
+a {
+    text-decoration:none;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+/*Top of all pages*/
+header{
+    display:flex;
+    align-items: baseline;
+}
+
+nav{
+    width:90vw;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    color:black;
+}
+
+.jumbo-image{
+    margin: 2rem 0;
 }
 
 .top-content {
@@ -85,6 +112,12 @@ p {
     padding-bottom: 20px;  
 }
 
+/* About text formatting*/
+#textAbout{
+    width: 100%;
+}
+
+/*middle content formatting for all pages*/
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -95,6 +128,7 @@ p {
     margin-bottom: 0;
 }
 
+/*Middle content for index*/
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -111,6 +145,88 @@ p {
     align-items: center;
     justify-content: center;
 }
+#b1{
+    background-color:teal;
+}
+
+#b2{
+    background-color:gold;
+}
+
+#b3{
+    background-color:cadetblue;
+}
+
+#b4{
+    background-color:coral;
+}
+
+#b5{
+    background-color:crimson;
+}
+
+#b6{
+    background-color:forestgreen;
+}
+
+#b7{
+    background-color: darkorchid;
+
+}
+
+#b8{
+    background-color:hotpink;
+    
+}
+
+#b9{
+    background-color:indigo;
+
+}
+
+#b10{
+    background-color:dodgerblue;
+    
+}
+
+/*middle content for about page blog styling*/
+#middleContentAbout{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:none;
+    
+}
+#middleContentAbout h2{
+    padding:1rem 0;
+}
+
+.blog-post{
+    width:48%;
+    border-bottom: 1px dashed black;
+    padding:2rem 1rem 0 0;
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+    
+}
+
+.blog-post p{
+    width:fit-content;
+}
+
+.blog-post a{
+    color:black;
+    width:8rem;
+    border:2px solid black;
+    border-radius:0.5rem;
+    padding:0.4rem .75rem;
+    text-align: center;
+    margin:1rem 0;
+}
+
+/* Bottom+footer content for all pages*/
 
 .bottom-content {
     display: flex;
